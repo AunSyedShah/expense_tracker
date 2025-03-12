@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Spending Tracker</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="tracker">
+        <h1>WHERE'S MY MONEY?</h1>
+        <p class="subtitle">WEEKLY SPENDING TRACKER</p>
+        <div class="week-box">
+            <label for="week">WEEK OF:</label>
+            <input type="text" id="week" placeholder="Enter date">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>WHERE IT WENT</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                    <th>SUN</th>
+                    <th>WEEKLY TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="tracker-body">
+                <!-- Rows will be dynamically inserted -->
+            </tbody>
+        </table>
+        <div class="footer">
+            <p><strong>Grand Total: $<span id="grand-total">0.00</span></strong></p>
+            <button onclick="resetTracker()">Reset</button>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
